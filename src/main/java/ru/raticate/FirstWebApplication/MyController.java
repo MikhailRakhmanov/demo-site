@@ -5,8 +5,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MyController {
-    @GetMapping("/")
-    String index(){
-        return "index";
+    @GetMapping("/julia")
+    String julia(){
+        return "julia";
+    }
+    @GetMapping("/nikita")
+    String nikita(){
+        return "nikita";
+    }
+    @GetMapping("/hello_page")
+    String helloPageShow(){
+        return "hello_page";
     }
 }
