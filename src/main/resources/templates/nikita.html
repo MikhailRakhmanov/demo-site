@@ -12,8 +12,16 @@
 
 <div class="main-content">
 
-    <h1>Дарова братишка</h1>
+    <h1 style="font-size: 48px">Дарова братишка</h1>
     <h2>Какие дела?</h2>
+
+    <form th:action="@{/nikita/message}"  th:method="POST" style="display: flex; flex-direction: column;">
+        <label >
+            <input type="text" name="mood" style="font-size: 24px; height: 35px; width: 300px;margin-bottom: 30px ;border:1px solid #84ff46;border-radius: 7px">
+        </label>
+        <input type="submit" style="font-size: 24px; height: 35px; width: 250px;justify-self: center;align-self: center;border:1px solid #84ff46;border-radius: 7px">
+    </form>
+
     <div style="position: fixed; bottom: 5px; right: 5px;color: white;font-size: 16px">raticate</div>
 </div>
 
